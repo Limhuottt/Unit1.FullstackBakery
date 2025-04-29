@@ -1,111 +1,109 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  body {
-    display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ff6060;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #0004ee;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b4f4f;
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+aside {
+  background-color: #e4dcdc;
+  padding: 1rem;
+  width: 20%;
+  flex-shrink: 0;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #d4bcbc;
+  border-radius: 4px;
+}
+
+article {
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+article h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonial {
+  background-color: #fff0e6;
+  border-left: 5px solid #d2691e;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+}
+
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  main {
     flex-direction: column;
   }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6b4f4f;
-    padding: 1rem 2rem;
-    color: #ffffff;
-  }
-  
-  .brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav a {
-    margin-left: 1.5rem;
-    font-size: 1rem;
-  }
-  
-  main {
-    display: flex;
-    flex: 1;
-    min-height: 0;
-  }
-  
+
   aside {
-    background-color: #e4dcdc;
-    padding: 1rem;
-    width: 20%;
-    flex-shrink: 0;
+    width: 100%;
   }
-  
-  aside ul {
-    list-style: none;
-  }
-  
-  aside li {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: #d4bcbc;
-    border-radius: 4px;
-  }
-  
-  article {
-    padding: 2rem;
-    flex: 1;
-    overflow-y: auto;
-  }
-  
-  article h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  article p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-  
-  .testimonial {
-    background-color: #fff0e6;
-    border-left: 5px solid #d2691e;
-    padding: 1rem;
-    margin: 1rem 0;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  :root {
-    font-size: 16px;
-  }
-  
-  @media (max-width: 768px) {
-    main {
-      flex-direction: column;
-    }
-  
-    aside {
-      width: 100%;
-    }
-  }
-  
+}
